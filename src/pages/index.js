@@ -30,6 +30,7 @@ const Header = () => {
               href='https://swahilipothub.co.ke/'
               target='_blank'
             >
+              
               About Swahilipot
             </a>
           </div>
@@ -45,29 +46,62 @@ const Footer = () => {
 
   return (
     <footer className='position-sm-absolute start-0 end-0 bottom-0'>
-      <div className='container py-4'>
-        <div className='row align-items-md-center text-center text-md-start'>
-          <div className='col-md mb-3 mb-md-0'>
-            <p className='mb-0'>
-              © Swahilipot FM {year}. All rights reserved.
-            </p>
+      <>
+        {/* ========== FOOTER ========== */}
+        <footer className="bg-primary-dark border-top border-white-10">
+          <div className="container">
+                        {/* End Row */}
+            <div className="border-top border-white-10" />
+            <div className="row align-items-md-end py-5">
+              <div className="col-md mb-3 mb-md-0">
+                <p className="text-white mb-0">
+                  © Space. {year} Swahilipot FM. All rights reserved.
+                </p>
+              </div>
+              <div className="col-md d-md-flex justify-content-md-end">
+                {/* Socials */}
+                <ul className="list-inline mb-0">
+                  <li className="list-inline-item">
+                    <a
+                      className="btn btn-icon btn-sm btn-soft-light rounded-circle"
+                      href="https://facebook.com/swahilipothub"
+                    >
+                      <i className="bi-facebook" />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      className="btn btn-icon btn-sm btn-soft-light rounded-circle"
+                      href="https://twitter.com/swahilipothub"
+                    >
+                      <i className="bi-twitter" />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      className="btn btn-icon btn-sm btn-soft-light rounded-circle"
+                      href="https://www.youtube.com/@swahilipothubfoundation"
+                    >
+                      <i className="bi-youtube" />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      className="btn btn-icon btn-sm btn-soft-light rounded-circle"
+                      href="https://instagram.com/swahilipothub"
+                    >
+                      <i className="bi-instagram" />
+                    </a>
+                  </li>
+                </ul>
+                {/* End Socials */}
+              </div>
+            </div>
           </div>
-          <div className='col-md d-md-flex justify-content-md-end'>
-            {/* Socials */}
-            <ul className='list-inline mb-0'>
-              <li className='list-inline-item'>
-                <a
-                  className='btn btn-icon btn-sm btn-ghost-secondary rounded-circle'
-                  href='https://www.instagram.com/swahilipotfm/'
-                >
-                  <i className='bi-instagram' />
-                </a>
-              </li>
-            </ul>
-            {/* End Socials */}
-          </div>
-        </div>
-      </div>
+        </footer>
+        {/* ========== END FOOTER ========== */}
+      </>
+
     </footer>
   )
 }
@@ -131,6 +165,7 @@ const Home = () => {
       <Header />
       <main id='content' role='main'>
         {/* Content */}
+
         <div className='d-sm-flex'>
           <div className='container d-sm-flex align-items-sm-center vh-sm-100 content-space-t-3 content-space-b-1 content-space-b-sm-3 content-space-sm-0'>
             <div className='row justify-content-sm-between align-items-sm-center flex-grow-1'>
